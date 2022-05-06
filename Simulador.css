@@ -1,0 +1,44 @@
+*{
+	font-family: "Frances",serif;
+	color:rgb(0, 0, 0);
+
+}
+h2{
+background-color: #ff0000;
+}
+body{
+	margin:0;
+	background-color:#808080;
+}
+.container{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	height: 100vh;
+}
+.form-group{
+	
+	grid-template-columns: repeat(4,75px);
+	grid-template-rows: 160px repeat(5,75);
+	background-color: #00ccff;
+	padding: 15px;
+	border-radius: 0px;
+	box-shadow: 15px 10px 0px 5px #808080;
+}
+
+button{
+	cursor: pointer;
+	margin: 5px;
+	padding: 0;
+	border-radius:32px;
+	font-size: 1.5em;
+	border: none;
+	background-color: #00ff37;
+	
+
+}
+button:active{
+	background-color:#000000;
+
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>Primer trabajo práctico</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+	<link rel=StyleSheet href="Simulador.css">
+	</link>
+</head>
+
+<body>
+	<div class="Container">
+		<div class="row mt-3">
+			<div class="col-6">
+				<h2>Simulador de plazo fijo</h2>
+				<div class="form-group">
+					<label for="NombreApellido ">Nombre y Apellido</label>
+					<input type="text" class="form-control" id="NombreApellido" value="">
+				</div>
+				<div class="form-group">
+					<label for="Monto">Monto a Invertir</label>
+					<input type="number" class="form-control" id="Monto">
+
+				</div>
+				
+				<div class="form-group">
+					<label for="Interes">Monto Inicial+Interes</label>
+					<input type="number" class="form-control" id="Interes">
+					<br>
+					<br>
+					<br>
+
+					<label for="dias"> seleccione la cantidad de dias</label>
+					<select id="Dias">
+						<option value=30>30</option>
+						<option value=60>60</option>
+						<option value=120>120</option>
+						<option value=360>360</option>
+
+
+					</select>
+					<label for="Reinventir">Quiere volver a reinvertir</label>
+					<select  id="Selector">
+						<option value="si">si</option>
+						<option value="no">no</option>
+					</select>
+					<br>
+					<br>
+				</div>
+				<div>
+					<button type="submit " class=" btn-primary" id="btnCalcular">Calcular</button>
+					<button type="submit " class=" btn btn-primary" id="btnBorrar">Borrar</button>
+					<button type="submit " class=" btn btn btn-primary" id="btnReinventir">Reinvertir el
+						Capital</button>
+						
+				</div>
+				<div class="colm-6">
+					<table id="lista-tabla" class="table">
+						<thead>
+							<tr>
+								<th>Cantidad de Dias</th>
+								<th>Porcentaje</th>
+								<th>Periodo</th>
+								<th>Monto Inicial</th>
+								<th>Monto Final</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+
+				</div>
+				</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="Simulador.js"></script>
+</body>
+
+</html
